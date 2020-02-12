@@ -34,6 +34,10 @@ HDRPを更新後、一度Unity Editorを再起動します。
 
 Unity Editor上でProjectウィンドウより「Scenes/roomTest.unity」を開きます。    
 
+## このシーンの解説
+
+Qiitaの「 [Unity 2019.3のHDRP (DXR使用)でLightmapと併用 (Tier1)](https://qiita.com/ft-lab/items/72862ce440f36be78293) 」で、本シーンの解説を行っています。    
+
 ## ライセンス  
 
 This software is released under the MIT License, see [LICENSE](./LICENSE).  
