@@ -28,7 +28,8 @@ Packageのエラーが出る場合は強制的に読み込み、Unity Editor起�
 他、バージョンによってカレントのPackageと異なる場合は同様のアップデートを行うようにします。    
 開発/確認は、HDRP 7.1.8を使用しました。    
 メインメニューの「Window」-「Render Pipeline」-「HD Render Pipeline Wizard」を選択し、エラーがある場合は「Fix All」ボタンを押します。    
-![img_01.png](./images/img_01.png) 
+![img_01.png](./images/img_01.png)    
+
 HDRPを更新後、一度Unity Editorを再起動します。    
 
 Unity Editor上でProjectウィンドウより「Scenes/roomTest.unity」を開きます。    
