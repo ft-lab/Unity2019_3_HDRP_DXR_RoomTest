@@ -19,7 +19,17 @@ Tier1を使用し、Ambient Occlusion/Screen Space ReflectionでDXRのレイト�
 Unity 2019.3以上でないと動作しません。    
 
 GitHubの「Unity2019_3_HDRP_DXR_RoomTest」フォルダの内容をコピーし、UnityHubで読み込むようにしてください。    
-Unity Editorでシーンが開かれていない場合は、「Scenes/roomTest.unity」を開くようにします。    
+初回は読み込みにすごい時間がかかります。    
+
+Packageのエラーが出る場合は強制的に読み込み、Unity Editor起動後にメインメニューの「Window」-「Package Manager」を選択します。    
+「In Project」にし、「Render-Pipelines High-Definition」「High Definition RP」の順番にアップデートするようにします。    
+![screenshot_001.jpg](./images/img_00.png)    
+アップデート順に注意してください。    
+他、バージョンによってカレントのPackageと異なる場合は同様のアップデートを行うようにします。    
+開発/確認は、HDRP 7.1.8を使用しました。    
+HDRPを更新後、一度Unity Editorを再起動します。    
+
+Unity Editor上でProjectウィンドウより「Scenes/roomTest.unity」を開きます。    
 
 ## ライセンス  
 
