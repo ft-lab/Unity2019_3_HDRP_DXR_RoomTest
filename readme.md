@@ -11,7 +11,7 @@ Unity 2019.3のHDRPでDXRを使用したサンプルシーンです。
 ## スクリーンショット
 
 Tier1を使用し、Ambient Occlusion/Screen Space ReflectionでDXRのレイトレーシングを行っています。    
-
+Lightmap/Reflection Probe/Light Probeを併用しています。    
 ![screenshot_001.jpg](./images/screenshot_001.jpg)    
 ![screenshot_002.jpg](./images/screenshot_002.jpg)    
 ![screenshot_003.jpg](./images/screenshot_003.jpg)    
