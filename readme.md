@@ -13,6 +13,8 @@ Unity 2019.3のHDRPでDXRを使用したサンプルシーンです。
 Tier1を使用し、Ambient Occlusion/Screen Space ReflectionでDXRのレイトレーシングを行っています。    
 
 ![screenshot_001.jpg](./images/screenshot_001.jpg)    
+![screenshot_002.jpg](./images/screenshot_002.jpg)    
+![screenshot_003.jpg](./images/screenshot_003.jpg)    
 
 ## 使い方
 
@@ -23,7 +25,7 @@ GitHubの「Unity2019_3_HDRP_DXR_RoomTest」フォルダの内容をコピーし
 
 Packageのエラーが出る場合は強制的に読み込み、Unity Editor起動後にメインメニューの「Window」-「Package Manager」を選択します。    
 「In Project」にし、「Render-Pipelines High-Definition」「High Definition RP」の順番にアップデートするようにします。    
-![screenshot_001.jpg](./images/img_00.png)    
+![img_00.jpg](./images/img_00.png)    
 アップデート順に注意してください。    
 他、バージョンによってカレントのPackageと異なる場合は同様のアップデートを行うようにします。    
 開発/確認は、HDRP 7.1.8を使用しました。    
