@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 232.90141, g: 255.05853, b: 215.01901, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -56,7 +56,7 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 16
+    m_BakeResolution: 20
     m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
@@ -70,7 +70,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
-    m_ReflectionCompression: 0
+    m_ReflectionCompression: 2
     m_MixedBakeMode: 0
     m_BakeBackend: 1
     m_PVRSampling: 1
@@ -80,9 +80,9 @@ LightmapSettings:
     m_PVREnvironmentSampleCount: 300
     m_PVREnvironmentReferencePointCount: 2048
     m_PVRFilteringMode: 2
-    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeDirect: 1
     m_PVRDenoiserTypeIndirect: 2
-    m_PVRDenoiserTypeAO: 0
+    m_PVRDenoiserTypeAO: 1
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 2
     m_PVRFilterTypeAO: 0
@@ -591,6 +591,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -620,8 +621,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -803,8 +804,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -870,10 +871,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 28ceb1e07d4baa6489516079eb23440a, type: 2}
-  m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 468155980}
-  m_SkySettingsFromProfile: {fileID: -8524931875345101959, guid: 28ceb1e07d4baa6489516079eb23440a,
-    type: 2}
+  m_StaticLightingSkyUniqueID: 0
+  m_SkySettings: {fileID: 0}
+  m_SkySettingsFromProfile: {fileID: 0}
 --- !u!4 &313761475
 Transform:
   m_ObjectHideFlags: 1
@@ -929,71 +929,71 @@ LightProbeGroup:
   m_Enabled: 1
   m_SourcePositions:
   - {x: 3.8619647, y: 1.2079706, z: 0.02915144}
-  - {x: 3.8619647, y: 1.2079706, z: -10.715837}
+  - {x: 3.8619647, y: 1.2079706, z: -10.122717}
   - {x: 3.8619647, y: -1, z: 0.02915144}
-  - {x: 3.8619647, y: -1, z: -10.715837}
+  - {x: 3.8619647, y: -1, z: -10.122717}
   - {x: -5.602961, y: 1.2079706, z: 0.02915144}
-  - {x: -5.602961, y: 1.2079706, z: -10.715837}
+  - {x: -5.602961, y: 1.2079706, z: -10.122717}
   - {x: -5.602961, y: -1, z: 0.02915144}
-  - {x: -5.602961, y: -1, z: -10.715837}
+  - {x: -5.602961, y: -1, z: -10.122717}
   - {x: 5.30927, y: 1.2079706, z: 0.02915144}
-  - {x: 5.30927, y: 1.2079706, z: -10.715837}
+  - {x: 5.30927, y: 1.2079706, z: -10.122717}
   - {x: 5.30927, y: -1, z: 0.02915144}
-  - {x: 5.30927, y: -1, z: -10.715837}
+  - {x: 5.30927, y: -1, z: -10.122717}
   - {x: -4.13988, y: 1.2079706, z: 0.02915144}
-  - {x: -4.13988, y: 1.2079706, z: -10.715837}
+  - {x: -4.13988, y: 1.2079706, z: -10.122717}
   - {x: -4.13988, y: -1, z: 0.02915144}
-  - {x: -4.13988, y: -1, z: -10.715837}
+  - {x: -4.13988, y: -1, z: -10.122717}
   - {x: 1, y: 1.2079706, z: 0.02915144}
-  - {x: 1, y: 1.2079706, z: -10.715837}
+  - {x: 1, y: 1.2079706, z: -10.122717}
   - {x: 1, y: -1, z: 0.02915144}
-  - {x: 1, y: -1, z: -10.715837}
+  - {x: 1, y: -1, z: -10.122717}
   - {x: 1.9110806, y: 1.2079706, z: 0.02915144}
-  - {x: 1.9110806, y: 1.2079706, z: -10.715837}
+  - {x: 1.9110806, y: 1.2079706, z: -10.122717}
   - {x: 1.9110806, y: -1, z: 0.02915144}
-  - {x: 1.9110806, y: -1, z: -10.715837}
+  - {x: 1.9110806, y: -1, z: -10.122717}
   - {x: 2.9072905, y: 1.2079706, z: 0.02915144}
-  - {x: 2.9072905, y: 1.2079706, z: -10.715837}
+  - {x: 2.9072905, y: 1.2079706, z: -10.122717}
   - {x: 2.9072905, y: -1, z: 0.02915144}
-  - {x: 2.9072905, y: -1, z: -10.715837}
+  - {x: 2.9072905, y: -1, z: -10.122717}
   - {x: -1, y: 1.2079706, z: 0.02915144}
-  - {x: -1, y: 1.2079706, z: -10.715837}
+  - {x: -1, y: 1.2079706, z: -10.122717}
   - {x: -1, y: -1, z: 0.02915144}
-  - {x: -1, y: -1, z: -10.715837}
+  - {x: -1, y: -1, z: -10.122717}
   - {x: 0.0037901998, y: 1.2079706, z: 0.02915144}
-  - {x: 0.0037901998, y: 1.2079706, z: -10.715837}
+  - {x: 0.0037901998, y: 1.2079706, z: -10.122717}
   - {x: 0.0037901998, y: -1, z: 0.02915144}
-  - {x: 0.0037901998, y: -1, z: -10.715837}
+  - {x: 0.0037901998, y: -1, z: -10.122717}
   - {x: -2.9633803, y: 1.2079706, z: 0.02915144}
-  - {x: -2.9633803, y: 1.2079706, z: -10.715837}
+  - {x: -2.9633803, y: 1.2079706, z: -10.122717}
   - {x: -2.9633803, y: -1, z: 0.02915144}
-  - {x: -2.9633803, y: -1, z: -10.715837}
+  - {x: -2.9633803, y: -1, z: -10.122717}
   - {x: -1.9595902, y: 1.2079706, z: 0.02915144}
-  - {x: -1.9595902, y: 1.2079706, z: -10.715837}
+  - {x: -1.9595902, y: 1.2079706, z: -10.122717}
   - {x: -1.9595902, y: -1, z: 0.02915144}
-  - {x: -1.9595902, y: -1, z: -10.715837}
+  - {x: -1.9595902, y: -1, z: -10.122717}
   - {x: 3.8619647, y: -0.018184662, z: 0.02915144}
-  - {x: 3.8619647, y: -0.018184662, z: -10.715837}
+  - {x: 3.8619647, y: -0.018184662, z: -10.122717}
   - {x: -5.602961, y: -0.018184662, z: 0.02915144}
-  - {x: -5.602961, y: -0.018184662, z: -10.715837}
+  - {x: -5.602961, y: -0.018184662, z: -10.122717}
   - {x: 5.30927, y: -0.018184662, z: 0.02915144}
-  - {x: 5.30927, y: -0.018184662, z: -10.715837}
+  - {x: 5.30927, y: -0.018184662, z: -10.122717}
   - {x: -4.13988, y: -0.018184662, z: 0.02915144}
-  - {x: -4.13988, y: -0.018184662, z: -10.715837}
+  - {x: -4.13988, y: -0.018184662, z: -10.122717}
   - {x: 1, y: -0.018184662, z: 0.02915144}
-  - {x: 1, y: -0.018184662, z: -10.715837}
+  - {x: 1, y: -0.018184662, z: -10.122717}
   - {x: 1.9110806, y: -0.018184662, z: 0.02915144}
-  - {x: 1.9110806, y: -0.018184662, z: -10.715837}
+  - {x: 1.9110806, y: -0.018184662, z: -10.122717}
   - {x: 2.9072905, y: -0.018184662, z: 0.02915144}
-  - {x: 2.9072905, y: -0.018184662, z: -10.715837}
+  - {x: 2.9072905, y: -0.018184662, z: -10.122717}
   - {x: -1, y: -0.018184662, z: 0.02915144}
-  - {x: -1, y: -0.018184662, z: -10.715837}
+  - {x: -1, y: -0.018184662, z: -10.122717}
   - {x: 0.0037901998, y: -0.018184662, z: 0.02915144}
-  - {x: 0.0037901998, y: -0.018184662, z: -10.715837}
+  - {x: 0.0037901998, y: -0.018184662, z: -10.122717}
   - {x: -2.9633803, y: -0.018184662, z: 0.02915144}
-  - {x: -2.9633803, y: -0.018184662, z: -10.715837}
+  - {x: -2.9633803, y: -0.018184662, z: -10.122717}
   - {x: -1.9595902, y: -0.018184662, z: 0.02915144}
-  - {x: -1.9595902, y: -0.018184662, z: -10.715837}
+  - {x: -1.9595902, y: -0.018184662, z: -10.122717}
   - {x: 3.8619647, y: 1.2079706, z: -1}
   - {x: 3.8619647, y: -1, z: -1}
   - {x: -5.602961, y: 1.2079706, z: -1}
@@ -1028,20 +1028,20 @@ LightProbeGroup:
   - {x: -2.9633803, y: -0.018184662, z: -1}
   - {x: -1.9595902, y: -0.018184662, z: -1}
   - {x: 4.613275, y: 1.2079706, z: 0.02915144}
-  - {x: 4.613275, y: 1.2079706, z: -10.715837}
+  - {x: 4.613275, y: 1.2079706, z: -10.122717}
   - {x: 4.613275, y: -1, z: 0.02915144}
-  - {x: 4.613275, y: -1, z: -10.715837}
+  - {x: 4.613275, y: -1, z: -10.122717}
   - {x: 4.613275, y: -0.018184662, z: 0.02915144}
-  - {x: 4.613275, y: -0.018184662, z: -10.715837}
+  - {x: 4.613275, y: -0.018184662, z: -10.122717}
   - {x: 4.613275, y: 1.2079706, z: -1}
   - {x: 4.613275, y: -1, z: -1}
   - {x: 4.613275, y: -0.018184662, z: -1}
   - {x: -4.7984486, y: 1.2079706, z: 0.02915144}
-  - {x: -4.7984486, y: 1.2079706, z: -10.715837}
+  - {x: -4.7984486, y: 1.2079706, z: -10.122717}
   - {x: -4.7984486, y: -1, z: 0.02915144}
-  - {x: -4.7984486, y: -1, z: -10.715837}
+  - {x: -4.7984486, y: -1, z: -10.122717}
   - {x: -4.7984486, y: -0.018184662, z: 0.02915144}
-  - {x: -4.7984486, y: -0.018184662, z: -10.715837}
+  - {x: -4.7984486, y: -0.018184662, z: -10.122717}
   - {x: -4.7984486, y: 1.2079706, z: -1}
   - {x: -4.7984486, y: -1, z: -1}
   - {x: -4.7984486, y: -0.018184662, z: -1}
@@ -1279,6 +1279,45 @@ LightProbeGroup:
   - {x: -4.7984486, y: 1.2079706, z: -9.478635}
   - {x: -4.7984486, y: -1, z: -9.478635}
   - {x: -4.7984486, y: -0.018184662, z: -9.478635}
+  - {x: 3.8619647, y: 1.2079706, z: -10.715837}
+  - {x: 3.8619647, y: -1, z: -10.715837}
+  - {x: -5.602961, y: 1.2079706, z: -10.715837}
+  - {x: -5.602961, y: -1, z: -10.715837}
+  - {x: 5.30927, y: 1.2079706, z: -10.715837}
+  - {x: 5.30927, y: -1, z: -10.715837}
+  - {x: -4.13988, y: 1.2079706, z: -10.715837}
+  - {x: -4.13988, y: -1, z: -10.715837}
+  - {x: 1, y: 1.2079706, z: -10.715837}
+  - {x: 1, y: -1, z: -10.715837}
+  - {x: 1.9110806, y: 1.2079706, z: -10.715837}
+  - {x: 1.9110806, y: -1, z: -10.715837}
+  - {x: 2.9072905, y: 1.2079706, z: -10.715837}
+  - {x: 2.9072905, y: -1, z: -10.715837}
+  - {x: -1, y: 1.2079706, z: -10.715837}
+  - {x: -1, y: -1, z: -10.715837}
+  - {x: 0.0037901998, y: 1.2079706, z: -10.715837}
+  - {x: 0.0037901998, y: -1, z: -10.715837}
+  - {x: -2.9633803, y: 1.2079706, z: -10.715837}
+  - {x: -2.9633803, y: -1, z: -10.715837}
+  - {x: -1.9595902, y: 1.2079706, z: -10.715837}
+  - {x: -1.9595902, y: -1, z: -10.715837}
+  - {x: 3.8619647, y: -0.018184662, z: -10.715837}
+  - {x: -5.602961, y: -0.018184662, z: -10.715837}
+  - {x: 5.30927, y: -0.018184662, z: -10.715837}
+  - {x: -4.13988, y: -0.018184662, z: -10.715837}
+  - {x: 1, y: -0.018184662, z: -10.715837}
+  - {x: 1.9110806, y: -0.018184662, z: -10.715837}
+  - {x: 2.9072905, y: -0.018184662, z: -10.715837}
+  - {x: -1, y: -0.018184662, z: -10.715837}
+  - {x: 0.0037901998, y: -0.018184662, z: -10.715837}
+  - {x: -2.9633803, y: -0.018184662, z: -10.715837}
+  - {x: -1.9595902, y: -0.018184662, z: -10.715837}
+  - {x: 4.613275, y: 1.2079706, z: -10.715837}
+  - {x: 4.613275, y: -1, z: -10.715837}
+  - {x: 4.613275, y: -0.018184662, z: -10.715837}
+  - {x: -4.7984486, y: 1.2079706, z: -10.715837}
+  - {x: -4.7984486, y: -1, z: -10.715837}
+  - {x: -4.7984486, y: -0.018184662, z: -10.715837}
   m_Dering: 1
 --- !u!4 &407501181
 Transform:
@@ -1333,107 +1372,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &468155980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 10
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1.2326345
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0.3630572, y: 0.40982518, z: 0.5}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 5a67f4dee37d10e42b0c98f877b031d0, type: 3}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1 &483975839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1549,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -1640,8 +1579,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -1823,8 +1762,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -2127,6 +2066,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -2156,8 +2096,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -2339,8 +2279,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -2567,6 +2507,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -2596,8 +2537,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -2779,8 +2720,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -3244,6 +3185,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -3273,8 +3215,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -3456,8 +3398,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -3830,6 +3772,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -3859,8 +3802,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -4042,8 +3985,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -4365,7 +4308,7 @@ MonoBehaviour:
   m_PointlightHDType: 1
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 2000
+  m_Intensity: 500
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -4403,6 +4346,8 @@ MonoBehaviour:
   m_FilterSizeTraced: 16
   m_SunLightConeAngle: 0.5
   m_LightShadowRadius: 0.5
+  m_SemiTransparentShadow: 0
+  m_ColorShadow: 1
   m_EvsmExponent: 15
   m_EvsmLightLeakBias: 0
   m_EvsmVarianceBias: 0.00001
@@ -4463,7 +4408,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2546.479
+  m_Intensity: 636.61975
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4677,6 +4622,8 @@ MonoBehaviour:
   m_FilterSizeTraced: 16
   m_SunLightConeAngle: 0.5
   m_LightShadowRadius: 0.5
+  m_SemiTransparentShadow: 0
+  m_ColorShadow: 1
   m_EvsmExponent: 15
   m_EvsmLightLeakBias: 0
   m_EvsmVarianceBias: 0.00001
@@ -5296,6 +5243,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -5325,8 +5273,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -5508,8 +5456,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -5858,6 +5806,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -5887,8 +5836,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -6070,8 +6019,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -6284,6 +6233,7 @@ MonoBehaviour:
       captureRotationProxySpace: {x: 0, y: 0, z: 0, w: 1}
       mirrorPositionProxySpace: {x: 0, y: 0, z: 0}
       mirrorRotationProxySpace: {x: 0, y: 0, z: 0, w: 0}
+    resolution: 512
     cameraSettings:
       customRenderingSettings: 0
       renderingPathCustomFrameSettings:
@@ -6313,8 +6263,8 @@ MonoBehaviour:
       frustum:
         mode: 0
         aspect: 1
-        farClipPlane: 1000
-        nearClipPlane: 0.3
+        farClipPlaneRaw: 1000
+        nearClipPlaneRaw: 0.3
         fieldOfView: 90
         projectionMatrix:
           e00: 1
@@ -6496,8 +6446,8 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
+  m_Mode: 2
+  m_RefreshMode: 2
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
@@ -6684,6 +6634,8 @@ MonoBehaviour:
   m_FilterSizeTraced: 16
   m_SunLightConeAngle: 0.5
   m_LightShadowRadius: 0.5
+  m_SemiTransparentShadow: 0
+  m_ColorShadow: 1
   m_EvsmExponent: 15
   m_EvsmLightLeakBias: 0
   m_EvsmVarianceBias: 0.00001
