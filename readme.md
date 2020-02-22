@@ -6,11 +6,11 @@ Unity 2019.3のHDRPでDXRを使用したサンプルシーンです。
 
 * OS : Windows 10
 * GPU : NVIDIA GeForce GTX 1060 6GB
-* Unity : Unity 2019.3.0f6
+* Unity : Unity 2019.3.2f1 + HDRP 7.2.1
 
 ## スクリーンショット
 
-Tier1を使用し、Ambient Occlusion/Screen Space ReflectionでDXRのレイトレーシングを行っています。    
+Ambient Occlusion/Screen Space ReflectionでDXRのレイトレーシングを行っています。    
 Lightmap/Reflection Probe/Light Probeを併用しています。    
 ![screenshot_001.jpg](./images/screenshot_001.jpg)    
 ![screenshot_002.jpg](./images/screenshot_002.jpg)    
@@ -28,7 +28,7 @@ Packageのエラーが出る場合は強制的に読み込み、Unity Editor起�
 ![img_00.jpg](./images/img_00.png)    
 アップデート順に注意してください。    
 他、バージョンによってカレントのPackageと異なる場合は同様のアップデートを行うようにします。    
-開発/確認は、HDRP 7.1.8を使用しました。    
+開発/確認は、HDRP 7.2.1を使用しました。    
 メインメニューの「Window」-「Render Pipeline」-「HD Render Pipeline Wizard」を選択し、エラーがある場合は「Fix All」ボタンを押します。    
 ![img_01.png](./images/img_01.png)    
 
@@ -47,6 +47,11 @@ This software is released under the MIT License, see [LICENSE](./LICENSE).
 3Dモデルはすべてオリジナルですので、ご自由にご使用くださいませ。    
 
 ## 更新履歴
+
+[2020/02/22]    
+* Unity 2019.3.2f1 + HDRP 7.2.1に移行
+* Lightmap/Light Probe/Reflection Probeのパラメータを微調整
+* マテリアルを微調整
 
 [2020/02/12]    
 * 初回版
